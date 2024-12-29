@@ -6,22 +6,9 @@
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>        
     </head>
     <body>
-        <h2>茶碗</h2>
-        <div align="right">2021/12/21</div>
-        <hr />
-        glbとusdzを両方使用した例。<br>
-        以下の画像をタップするとARできます。<br>
-        <model-viewer
-          ar
-          ar-modes="scene-viewer webxr quick-look"
-          src="./sample.glb"
-          ios-src="./sample.usdz"
-          alt="sample"
-          auto-rotate
-          camera-controls
-        ></model-viewer>
-        <br>
-        Source : <a href="https://github.com/kentarographics/kentarographics.github.io/">https://github.com/kentarographics/kentarographics.github.io/sample</a><br>
-        <hr />
+		<p data-hide-on-relar>Visit this page on iOS 12 to try AR Quick Look</p> <!-- This message shoud be hidden by JS and CSS -->
+		<a href="sample.usdz" rel="ar">
+  		<img src="sample.jpg" width="250" height="250">
+		</a>
     </body>
 </html>
